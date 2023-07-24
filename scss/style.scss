@@ -1,0 +1,183 @@
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/condicionales";
+
+
+
+/* GLOBALES */
+.html {
+    font-size:0%;
+    box-sizing: border-box;
+}
+body {
+    font-size:  20px;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #000000;
+    background-color: #ffffff;
+    background:url(../img/back3.png);
+    background-size: cover;
+background-attachment: fixed;
+    background-repeat:no-repeat 
+    
+    
+
+   
+}
+
+/* titulos */
+h1 { 
+      border-color: #000000 ;
+    border-radius: 2rem;  }
+h2 {background-image:linear-gradient(to top,gray,white);
+    border-radius: 2rem;}
+h3 {background-image:linear-gradient(to top,gray,white);
+    border-radius: 2rem;} 
+    span{color: rgb(253, 2, 2);
+   }
+h5{border-radius: 2rem;}
+h4,h6{background-image:linear-gradient(to top,gray,white);
+    border-radius: 2rem;
+}
+
+
+/* TIPOGRAFIAS Titulos */
+h1,h5 {
+    font-size: 5.8rem;
+    display: flex;
+
+    
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.0rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+/*Fuente letras y precios*/
+
+.col,p,legend,label {
+
+    font-size:large;
+    border-radius: 2rem;color: #e4e4e4
+;}
+/*color grillas*/
+.col,p{background-color: white;
+color: #000000;}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header .encabezado {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.header span{
+    font-weight: bold;
+}
+
+.wave {
+    margin-bottom: 2.8rem;
+}
+/*Barra nueva*/
+.navbar
+{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-radius: 2rem;
+}
+
+
+
+/* CONTENIDO PRINCIPAL */
+.main {
+    background-color: #74f56f;
+}
+
+// col color
+.col {background-color:white;}
+
+/* FOOTER */
+.hr{color: antiquewhite;
+border: antiquewhite;}
+.footer {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.footer .redes{
+    text-align: center;
+}
+
+.footer .redes a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.footer .texto {
+    text-align: center;
+}
+
+.img {
+    display: flex;
+}
+//contendeor2
+.contenedor2 {
+transform:translate(500px
+);}
+.contenedor2:hover{
+transform:skew(10deg);}
+// .segundobanner 
+#segundobanner { 
+    display:flex;
+    align-items: center;
+    height: 200px;
+    background-image: url(../img/fondo-banner-bienvenida-viernes-negro.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;}
+// heder-container
+.header-container {
+    display:flex;
+    align-items: center;
+    height: 200px;
+    // background-image: url(../img/invierno.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+  
+
+}
+/* BOTONES */
+.boton {
+    background-color: #e7e7e7;
+    color: #000000;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
