@@ -1,0 +1,47 @@
+/*Barra nueva*/
+.navbar-brand:hover,.nav-link:hover
+{background-image:linear-gradient(to top,gray,white);
+    border-radius: 2rem
+
+}
+.navbar{
+    position: relative;
+
+}
+#contenedorzapatos,#contenedoracsesorios{position: relative;
+    top: 50px;
+
+}
+ /* Estilo para el navbar */
+ .navbar {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Estilo para los enlaces del navbar */
+  .navbar a.nav-link {
+    color: #333; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+  }
+  
+  /* Estilo para el enlace activo en el navbar */
+  .navbar a.nav-link.active {
+    color: #555; 
+  }
+  
+  /* Efecto hover para los enlaces del navbar */
+  .navbar a.nav-link:hover {
+    color: #777; 
+  }
+  
+  /* Estilo para el navbar */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='3' y1='12' x2='27' y2='12' stroke='%23333' stroke-width='2'/%3E%3Cline x1='3' y1='6' x2='27' y2='6' stroke='%23333' stroke-width='2'/%3E%3Cline x1='3' y1='18' x2='27' y2='18' stroke='%23333' stroke-width='2'/%3E%3C/svg%3E");
+  }
+  
+  /* Efecto hover para el navbar*/
+  .navbar-toggler:hover .navbar-toggler-icon {
+    filter: brightness(70%);
+  }

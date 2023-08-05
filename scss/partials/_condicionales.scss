@@ -1,4 +1,4 @@
- $temporada:"winter";
+ $temporada:"default";
 
  @if($temporada == "summer") {
 
@@ -32,6 +32,16 @@
     }
 }
  }
+
+ @else if($temporada == "default") {  
+    .header-container {
+    background-image: url("../img/pared-ladrillo-negro-textura-fondo.jpg");
+    h1{
+        color: gray;
+    }
+}
+ }
+
 
 
 

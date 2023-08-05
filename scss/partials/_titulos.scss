@@ -1,0 +1,106 @@
+/* titulos */
+h1 { 
+    border-color: #000000 ;
+  border-radius: 2rem;  }
+h2 {background-image:radial-gradient(gray,white);
+  }
+h3 {background-image:radial-gradient(gray,white);
+  border-radius: 2rem;} 
+  span{color: rgb(253, 2, 2);
+ }
+h5{border-radius: 2rem;}
+h4,h6{background-image:radial-gradient(gray,white);
+  border-radius: 2rem;
+}
+
+
+/* TIPOGRAFIAS Titulos */
+h1,h5 {
+  font-size: 5.8rem;
+  display: flex;
+
+  
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center
+}
+
+h3 {
+  font-size: 1.0rem;
+}
+
+h1,h3,h4,h5,h6 {
+  text-align: center;
+  margin-top: 1rem;
+  
+}
+h5 {
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+animation: glow 2s ease-in-out infinite;
+}
+/* Animación para el título */
+@keyframes glow {
+    0%, 100% {
+      color: inherit; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+    50% {
+      color: red; 
+      text-shadow: 4px 4px 6px rgba(255, 0, 0, 0.8); 
+    }
+  }
+  h1 span {
+    display: inline-block;
+    color: red; 
+    text-transform: uppercase; 
+    position: relative;
+  }
+  
+  h1 span:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray; 
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  h1 span:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  h1:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 2px;
+    left: 2px;
+    z-index: -1;
+    box-shadow: 0 0 20px #ff6600; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+  }
+  
+  h1:hover:before {
+    opacity: 1;
+  }
+  
+  @keyframes changeColor {
+    0% {
+      color: #333; 
+    }
+    100% {
+      color: red; 
+    }
+  }
+  
+  h1:hover {
+    animation: changeColor 0.5s ease-in-out; 
+  }

@@ -3,76 +3,123 @@
 
     <head>
       <meta name="description" content="cremas,pastas,esponjas todos tus acsesorios aqui">
+      <meta charset="UTF-8"/> 
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="description" content="Venta de calzado y accesorios">
+     <meta name="keywords" content="zapatos,calzado,nike,adidas,pony,vizzano,zapatillas,ofertas,botas,mejores precios,beira rio,modere,moleca,zapateria pepe,zapateriapepe">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+      <link href="./css/bootstrap.css" rel="stylesheet">
+      <link href="./js/bootstrap.js" rel="stylesheet">
+      <link href="./css/style.css" rel="stylesheet">
+     
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-        <link href="./css/bootstrap.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
-        <link href="./js/bootstrap.js" rel="stylesheet"> 
         <title>Accesorios</title>
     </head>
     
     <body>
+      <header class="header"> 
       <div class="header-container" class="container-fluid">
         <h1><span>Zapateria</span>Pepe</h1> 
+        <i class="fas fa-shoe-prints"></i>
+        <i class="fas fa-shoe-prints"></i>
+        <i class="fas fa-shoe-prints"></i>
       </div>
-            <header class="header"> 
+         
                 <h2><b>Tu zapateria de confianza</b></h2>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="index.html">Inicio</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                          <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                          <a class="nav-link" href="zapatos.html">zapatos</a>
-                          <a class="nav-link" href="accesorios.html">accesorios</a>
-                          <a class="nav-link" href="contacto.html">Contacto</a>
-                        </div>
+                <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" id="navbar">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                      Inicio
+                      <i class="fas fa-home"></i> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="nosotros.html">
+                          Nosotros
+                          <i class="fas fa-user"></i> 
+                        </a>
+                        <a class="nav-link" href="zapatos.html">
+                          Zapatos
+                          <i class="fa-sharp fa-solid fa-shoe-prints"></i>
+                                  </a>
+                        <a class="nav-link" href="accesorios.html">
+                          Accesorios
+                          <i class="fas fa-shopping-bag"></i> 
+                        </a>
+                        <a class="nav-link" href="contacto.html">
+                          Contacto
+                          <i class="fas fa-envelope"></i> 
+                        </a>
                       </div>
                     </div>
-                  </nav>
+                  </div>
+                </nav>
         </header>
-        <div class="container text-center">
-            <div class="row">
-              <div class="col"> <img src="./img/acsesorios/esponja.jpg" alt="esponja">
-                <p>esponja</p>
-                <p>$250</p></div>
-              <div class="col"><img src="./img/acsesorios/esponja2.jpg" alt="esponja2">
-                <p>esponja2</p>
-                <p>$200</p></div>
-              <div class="col"> <img src="./img/acsesorios/crema negra.jpg" alt="cremanegra">
-                <p>Crema negra</p>
-                <p>$320</p></div>
-              <div class="col"> <img src="./img/acsesorios/crema icolora.jpg" alt="cremaincolora">
-                <p>Crema incolora</p>
-                <p>$250</p></div>
+        <div class="container text-center" id="contenedoracsesorios">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./img/acsesorios/esponja.jpg" alt="esponja" class="image-zoom">
+              <p>Pielux</p>
+              <p>$250</p>
             </div>
-            <div class="row">
-              <div class="col"> <img src="./img/acsesorios/crema marron.jpg" alt="cremamarron">
-                <p>crema marron</p>
-                <p>$180</p></div>
-              <div class="col"> <img src="./img/acsesorios/crema.jpg" alt="crema">
-                <p>crema</p>
-                <p>$470</p></div>
+            <div class="col d-flex flex-column align-items-center"> 
+              <img src="./img/acsesorios/esponja2.jpg" alt="esponja2" class="image-zoom">
+              <p>Super esponja</p>
+              <p>$200</p>
             </div>
-    
-    <hr>
-    <td><a href='accesorios.html'>Subir </a</td> </tr>
-        <footer class="footer"> 
-            <div class="redes">
-                    <img width="50px" src="./img/face.png" alt="Logo de Facebook">
-                </a>
-                    <img width="50px" src="./img/instan.jpg" alt="Logo de Instagram">
-                </a>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./img/acsesorios/crema negra.jpg" alt="cremanegra" class="image-zoom">
+              <p>Crema Colortel</p>
+              <p>$320</p>
             </div>
-            <div class="texto">
+            <div class="col d-flex flex-column align-items-center"> 
+              <img src="./img/acsesorios/crema icolora.jpg" alt="cremaincolora" class="image-zoom">
+              <p>Crema Wassington</p>
+              <p>$250</p>
             </div>
-           
-        </footer>
-        <script src="./js/bootstrap.js"></script>   
-    </body>
+          </div>
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./img/acsesorios/crema marron.jpg" alt="cremamarron" class="image-zoom">
+              <p>crema Bufalo</p>
+              <p>$180</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./img/acsesorios/crema.jpg" alt="crema" class="image-zoom">
+              <p>crema Sapolio</p>
+              <p>$470</p>
+            </div>
+          </div>  <td> <a href='accesorios.html'>Subir </a</td> </tr>
+        </div>
+      
+        
+            <footer class="footer">     <hr> 
+              <div class="redes">
+                <a href="https://facebook.com"><img width="50px" src="./img/face.png" alt="Logo de Facebook"></a>
+                <a href="https://instagram.com"><img width="50px" src="./img/instan.jpg" alt="Logo de Instagram"></a>
+              </div>
+            
+              <div class="texto">
+              
+            
+              </div>
+              <div class="card">
+                  <div class="card-body">
+                    <ol type="none">
+                      <li>Telefono de contacto: <a href="#">098044387</a></li>
+                      <li>Correo electronico: <a href="#"> zapateriapepe@gmail.com</a></li>
+                      <li>Conozca nuestra historia: <a href="nosotros.html">click aqui</a></li>
+                      <li>Dejanos tu opinion:<a href="contacto.html">Click aqui</a></li>
+                    </ol>
+                  </div>
+                </div>
+                <p>© 2023 Zapateria Pepe. Todos los derechos reservados.</p>
+              
+            </footer>
+        
+            <script src="./js/bootstrap.js"></script>
+          </body>
 </html>

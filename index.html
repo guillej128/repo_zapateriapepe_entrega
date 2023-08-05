@@ -5,41 +5,61 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
        <meta name="description" content="Venta de calzado y accesorios">
        <meta name="keywords" content="zapatos,calzado,nike,adidas,pony,vizzano,zapatillas,ofertas,botas,mejores precios,beira rio,modere,moleca,zapateria pepe,zapateriapepe">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link href="./css/bootstrap.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
         <link href="./js/bootstrap.js" rel="stylesheet">
-        
+        <link href="./css/style.css" rel="stylesheet">
+       
 
         <title>Zapateria Pepe</title>
     </head>
 <body>
-
+  <header class="header"> 
   <div class="header-container" class="container-fluid">
     <h1><span>Zapateria</span>Pepe</h1> 
+    <i class="fas fa-shoe-prints"></i>
+    <i class="fas fa-shoe-prints"></i>
+    <i class="fas fa-shoe-prints"></i>
   </div>
 
-  <header class="header"> 
+ 
 
   <h2><b>Tu zapateria de confianza</b></h2>
   
    
-        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Inicio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="zapatos.html">zapatos</a>
-                  <a class="nav-link" href="accesorios.html">accesorios</a>
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div>.</div>
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        Inicio
+        <i class="fas fa-home"></i> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="nosotros.html">
+            Nosotros
+            <i class="fas fa-user"></i> 
+          </a>
+          <a class="nav-link" href="zapatos.html">
+            Zapatos
+            <i class="fa-sharp fa-solid fa-shoe-prints"></i>
+                    </a>
+          <a class="nav-link" href="accesorios.html">
+            Accesorios
+            <i class="fas fa-shopping-bag"></i> 
+          </a>
+          <a class="nav-link" href="contacto.html">
+            Contacto
+            <i class="fas fa-envelope"></i> 
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
 
     </header> 
     <div class="container text-center">
@@ -68,26 +88,34 @@
     </div>
            <h3>Las mejores marcas.</h3>
         
-            <div class="container text-center">
-                <div class="row align-items-start">
-                  <div class="col">
-                    <th>Nike<li><img src="./img/nike/images.jpg" alt="nike"></li></th>
-                  </div>
-                  <div class="col">
-                    <th>Adidas<li><img src="./img/adidas/images (5).jpg" alt="adidas"></li></th>
-
-                  </div>
-                  <div class="col">
-                    <th>Pony <li><img src="./img/pony/images (8).jpg" alt="pony"></li></th>
-
-                  </div>
+           <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="image-container">
+                  <img src="./img/nike/images.jpg" alt="nike" class="image-zoom">
                 </div>
+                <p>Nike</p>
               </div>
+              <div class="col">
+                <div class="image-container">
+                  <img src="./img/adidas/images (5).jpg" alt="adidas" class="image-zoom">
+                </div>
+                <p>Adidas</p>
+              </div>
+              <div class="col">
+                <div class="image-container">
+                  <img src="./img/pony/images (8).jpg" alt="pony" class="image-zoom">
+                </div>
+                <p>Pony</p>
+              </div>
+            </div>
+          </div>
+          
               <h4>Que el invierno no te agarre desprevenido.</h4>
               <div  class="container text-center">
                 <div class="row align-items-start">
                   <div class="col">
-              <div id="carouselExampleRide"  class="carousel slide" data-bs-ride="true">
+              <div id="carouselExampleSlidesOnly"  class="carousel slide" data-bs-ride="carousel">
                 <div  class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./img/botas/th4.jpg" width="40%" alt="caterpilar1">
@@ -115,68 +143,103 @@
           </div>
         </div>
         <div class="container-fluid" id="segundobanner"> 
-              <h5>Ofertas de este mes</h5>
+              <h5>Ofertas de este mes!!</h5>
             </div>
             <div class="container text-center">
               <div class="row">
                 <div class="col">
-               <img src="./img/ofertas/oferta1.jpg" alt="oferta1">
-               <p>VIZZANO</p>
-               <p>$1500</p>
+                  <div class="image-container">
+                    <img src="./img/ofertas/oferta1.jpg" alt="oferta1" class="image-zoom">
+                  </div>
+                  <p>VIZZANO</p>
+                  <p>$1500</p>
                 </div>
                 <div class="col">
-                <img src="./img/ofertas/oferta2.jpg" alt="oferta2">
-                <p>BEIRA RIO</p>
-                <p>$1000</p>
+                  <div class="image-container">
+                    <img src="./img/ofertas/oferta2.jpg" alt="oferta2" class="image-zoom">
+                  </div>
+                  <p>BEIRA RIO</p>
+                  <p>$1000</p>
                 </div>
                 <div class="col">
-              <img src="./img/ofertas/oferta3.jpg" alt="ofertas3">
-              <p>MODARE</p>
-              <p>$700</p>
+                  <div class="image-container">
+                    <img src="./img/ofertas/oferta3.jpg" alt="ofertas3" class="image-zoom">
+                  </div>
+                  <p>MODARE</p>
+                  <p>$700</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                 <img src="./img/ofertas/oferta4.jpg" alt="ofertas4">
-                 <p>MOLECA</p>
-                 <p>$900</p>
+                  <div class="image-container">
+                    <img src="./img/ofertas/oferta4.jpg" alt="ofertas4" class="image-zoom">
+                  </div>
+                  <p>MOLECA</p>
+                  <p>$900</p>
                 </div>
                 <div class="col">
-                 <img src="./img/ofertas/oferta5.jpg" alt="oferta5">
-                 <p>RIO CUARTO</p>
-                 <p>$1100</p>
+                  <div class="image-container">
+                    <img src="./img/ofertas/oferta5.jpg" alt="oferta5" class="image-zoom">
+                  </div>
+                  <p>RIO CUARTO</p>
+                  <p>$1100</p>
                 </div>
                 <div class="col">
-              <img src="./img/ofertas/oferta6.jpg" alt="ofertas6">
-              <p>DIVA</p>
-              <p>$1600</p>
+                  <div class="image-container">
+                    <img src="./img/ofertas/oferta6.jpg" alt="ofertas6" class="image-zoom">
+                  </div>
+                  <p>DIVA</p>
+                  <p>$1600</p>
                 </div>
               </div>
             </div>
+            
             <h6>Encuentranos aqui.</h6>
-              <div class="container text-center">
-                <div class="row align-items-start">
-                  <div class="row">
-              <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3441113.4986802186!2d-55.78464465!3d-32.6205075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2suy!4v1688602567841!5m2!1ses!2suy" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="container text-center">
+              <div class="row align-items-start">
+                <div class="col-md-8">
+                  <div style="border: 4px solid #ccc;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3441113.4986802186!2d-55.78464465!3d-32.6205075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2suy!4v1688602567841!5m2!1ses!2suy" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">¡Los esperamos!</h4>
+                      <p class="card-text">Av. Rivera 6161</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+            
               <hr>
 <td>volver al inicio <a href='index.html'>Volver al inicio </a</td> </tr>
+  <footer class="footer">     <hr> 
+    <div class="redes">
+      <a href="https://facebook.com"><img width="50px" src="./img/face.png" alt="Logo de Facebook"></a>
+      <a href="https://instagram.com"><img width="50px" src="./img/instan.jpg" alt="Logo de Instagram"></a>
+    </div>
+  
+    <div class="texto">
+    
+  
+    </div>
+    <div class="card">
+        <div class="card-body">
+          <ol type="none">
+            <li>Telefono de contacto: <a href="#">098044387</a></li>
+            <li>Correo electronico: <a href="#"> zapateriapepe@gmail.com</a></li>
+            <li>Conozca nuestra historia: <a href="nosotros.html">click aqui</a></li>
+            <li>Dejanos tu opinion:<a href="contacto.html">Click aqui</a></li>
+          </ol>
+        </div>
+      </div>
+      <p>© 2023 Zapateria Pepe. Todos los derechos reservados.</p>
+    
+  </footer>
 
-                    <footer class="footer"> 
-                        <div class="redes">
-                                <img width="50px" src="./img/face.png" alt="Logo de Facebook">
-                            </a>
-                                <img width="50px" src="./img/instan.jpg" alt="Logo de Instagram">
-                            </a>
-                        </div>
-                        <div class="texto">
-            
-                        </div>
-                    </footer>
-                    
-  <script src="./js/bootstrap.js"></script>                 
+  <script src="./js/bootstrap.js"></script>
 </body>
 
 </html>

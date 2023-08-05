@@ -1,8 +1,8 @@
 @import "partials/fonts";
 @import "partials/variables";
 @import "partials/condicionales";
-
-
+@import "partials/titulos";
+@import "partials/nav-bar";
 
 /* GLOBALES */
 .html {
@@ -17,58 +17,17 @@ body {
     background:url(../img/back3.png);
     background-size: cover;
 background-attachment: fixed;
-    background-repeat:no-repeat 
-    
-    
-
-   
+    background-repeat:no-repeat  
 }
-
-/* titulos */
-h1 { 
-      border-color: #000000 ;
-    border-radius: 2rem;  }
-h2 {background-image:linear-gradient(to top,gray,white);
-    border-radius: 2rem;}
-h3 {background-image:linear-gradient(to top,gray,white);
-    border-radius: 2rem;} 
-    span{color: rgb(253, 2, 2);
-   }
-h5{border-radius: 2rem;}
-h4,h6{background-image:linear-gradient(to top,gray,white);
-    border-radius: 2rem;
-}
-
-
-/* TIPOGRAFIAS Titulos */
-h1,h5 {
-    font-size: 5.8rem;
-    display: flex;
-
-    
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
-    font-size: 1.0rem;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    text-align: center;
-}
-
 /*Fuente letras y precios*/
 
 .col,p,legend,label {
 
-    font-size:large;
+    font-size:medium;
     border-radius: 2rem;color: #e4e4e4
 ;}
 /*color grillas*/
-.col,p{background-color: white;
+.col,p{background-color: rgb(235, 235, 235);
 color: #000000;}
 
 /* HEADER */
@@ -90,13 +49,22 @@ header {
 .wave {
     margin-bottom: 2.8rem;
 }
-/*Barra nueva*/
-.navbar
+
+/* contactos*/
+#contactos
 {
-    display: inline-block;
+   width:50%;
+   position: relative;
+  top: 50px;
+
+}
+.container-fluid 
+{    
+    display:block;
     width: 100%;
-    position: relative;
+    position: center;
     border-radius: 2rem;
+    
 }
 
 
@@ -106,51 +74,25 @@ header {
     background-color: #74f56f;
 }
 
-// col color
+/*  col color*/
 .col {background-color:white;}
 
-/* FOOTER */
-.hr{color: antiquewhite;
-border: antiquewhite;}
-.footer {
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    flex-direction: column;
-}
-
-.footer .redes{
-    text-align: center;
-}
-
-.footer .redes a {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-decoration: none;
-}
-
-.footer .texto {
-    text-align: center;
-}
-
-.img {
-    display: flex;
-}
-//contendeor2
+/* contendeor2*/
 .contenedor2 {
 transform:translate(500px
 );}
 .contenedor2:hover{
 transform:skew(10deg);}
-// .segundobanner 
+/*  .segundobanner */
 #segundobanner { 
     display:flex;
+    margin: 20px;
     align-items: center;
     height: 200px;
     background-image: url(../img/fondo-banner-bienvenida-viernes-negro.jpg);
     background-repeat: no-repeat;
     background-size:cover;}
-// heder-container
+/* heder-container*/
 .header-container {
     display:flex;
     align-items: center;
@@ -164,7 +106,7 @@ transform:skew(10deg);}
 }
 /* BOTONES */
 .boton {
-    background-color: #e7e7e7;
+    background-color: gray;
     color: #000000;
     padding: 1rem 3rem;
     margin-top: 1rem;
@@ -175,9 +117,122 @@ transform:skew(10deg);}
     width: 90%;
     text-align: center;
     border: none;
+    
 }
 
 .boton:hover {
     cursor: pointer;
 }
 
+/* Estilos para el footer */
+.footer {
+    background-color: #f0f0f0; 
+    margin-top: 50px;
+    color: #000000; 
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Estilos para las redes sociales en el footer */
+  .redes {
+    margin-bottom: 10px; 
+  }
+  
+  .redes img {
+    margin-right: 10px; 
+  }
+  
+  /* Estilos para la línea divisoria horizontal (hr) */
+  .footer hr {
+    border-color: #000000; 
+  }
+  
+  /* Estilos para el texto del footer */
+  .texto p {
+    margin: 0;
+  }
+  
+  /* Estilos para los enlaces dentro del footer */
+  .footer a {
+    color: #000000; 
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; 
+  }
+ /* Estilos para la card */
+.card {
+display: flex;
+  
+  }
+  
+  /* Estilos para el título de la card */
+  .card-title {
+    font-size:10px;
+    margin-bottom: 10px; 
+    list-style-type: none;
+  }
+  
+  /* Estilos para la lista ordenada dentro de la card */
+  .card ol {
+    padding-left: 5px; 
+    font-size:10px; 
+    list-style-type: none;
+  }
+  /* Estilos para el icono "ZP" */
+.fa-shoe-prints {
+    font-size: 24px; 
+    margin-left: 10px; 
+  }
+    /* Estilo básico para las imágenes */
+    .image-zoom {
+        transition: transform 0.3s ease;
+      }
+    
+      /* Efecto de agrandar las imágenes al pasar el mouse por encima */
+      .image-zoom:hover {
+        transform: scale(1.2); 
+        cursor: pointer; 
+      }
+   
+  /* Estilos para la card doctor-zapato-card */
+#doctor-zapato-card {
+    width: 50%;
+    background-color: #f0f0f0; 
+    padding: 30px; 
+    margin-left: 20px; 
+  }
+  
+  /* Estilos para el contenido de la card */
+  #doctor-zapato-card .card-title {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+  }
+  
+  #doctor-zapato-card .card-text {
+    font-size: 14px; 
+  }
+  /* Estilos para la imagen con zoom */
+.zoom-image {
+    overflow: hidden;
+  }
+  
+  .zoom-image img {
+    transition: transform 0.3s ease;
+  }
+  
+  .zoom-image:hover img {
+    transform: scale(3); 
+  }
+  .fas.fa-shoe-prints  {
+    font-size: 40px;
+    color: red; 
+    margin: 10px; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  /* Efecto visual al pasar el cursor sobre los iconos */
+  .fas.fa-shoe-prints:hover {
+    transform: scale(1.2); 
+    color: gray;} 
